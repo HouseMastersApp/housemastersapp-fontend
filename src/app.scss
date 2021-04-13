@@ -1,0 +1,115 @@
+// Global SCSS styling
+// @see https://docs.nativescript.org/ui/styling
+$clr-white: #fff;
+$clr-primary: $clr-white;
+$clr-orange: orange;
+$clr-text-normal: #494949;
+$clr-background: #83ABE8;
+$clr-divider: #494949;
+$clr-toolbar-text: $clr-white;
+$clr-toolbar-background: transparent;
+
+$radius-button: 10;
+$radius-textfield: 5;
+
+.mdi {
+  font-family: mdi, "Material Design Icons";
+}
+
+Button {
+  text-transform: none;
+}
+
+.page {
+  background: linear-gradient(180deg, rgba(255, 31, 31, 0.678) 0%, rgba(235,0,255,0.5) 67%, rgba(0, 47, 255, 0.5) 100%);
+}
+
+.app-content {
+  padding: 0 20 0 20;
+}
+
+.toolbar {
+  background-color: $clr-toolbar-background;
+  height: 50;
+}
+
+.toolbar .title {
+  font-weight: bold;
+  font-size: 18;
+  color: $clr-toolbar-text;
+}
+
+.btn-toolbar-back {
+  font-size: 18;
+  padding: 0 0 0 5;
+}
+
+.btn-primary {
+  android-elevation: 2;
+  background-color: $clr-primary;
+  color: $clr-text-normal;
+
+  border-radius: $radius-button;
+  border-width: 0;
+
+  padding: 0;
+
+  text-align: center;
+}
+
+.et-primary {
+  android-elevation: 2;
+  background-color: $clr-primary;
+  color: $clr-text-normal;
+
+  border-radius: $radius-textfield;
+  border-width: 0;
+
+  padding: 10 5 10 5;
+}
+
+.txt-title {
+  font-size: 24;
+  font-weight: bold;
+  color: $clr-primary;
+  text-align: center;
+  width: 100%;
+  margin: 20 0 20 0;
+}
+
+.btn-fb {
+  height: 50;
+  width: 50;
+  border-radius: 25;
+  background-color: gray;
+}
+
+.divider {
+  width: 100%;
+  border-bottom-width: 1;
+  border-color: $clr-divider;
+}
+
+.white {
+  color: $clr-white;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.left {
+  text-align: left;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
