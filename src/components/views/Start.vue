@@ -50,8 +50,8 @@ import MDIButton from "../button/MDIButton.vue";
 import CreateHouseholdViewVue from "./CreateHouseholdView.vue";
 import { EventData } from '@nativescript/core/data/observable';
 var dialogs = require("tns-core-modules/ui/dialogs");
-import * as SocialShare from "nativescript-social-share";
-import { openCamera, openSingleImagePicker } from "../../utils/cameraUtils.js";
+//import * as SocialShare from "nativescript-social-share";
+//import { openCamera, openSingleImagePicker } from "../../utils/cameraUtils.js";
 import { ImageAsset } from '@nativescript/core';
 
   export default {
@@ -72,13 +72,13 @@ import { ImageAsset } from '@nativescript/core';
         maxTaskAmount: 10,
         points: 25,
 
-        shareUnicode: this.$store.getters.getFontUnicodes.shareUnicode,
-        plusUnicode: this.$store.getters.getFontUnicodes.plusUnicode,
-        priceUnicode: this.$store.getters.getFontUnicodes.priceUnicode,
-        inviteUnicode: this.$store.getters.getFontUnicodes.inviteUnicode,
-        overviewUnicode: this.$store.getters.getFontUnicodes.overviewUnicode,
-        hamburgerUnicode: this.$store.getters.getFontUnicodes.hamburgerUnicode,
-        starUnicode: this.$store.getters.getFontUnicodes.starUnicode,
+        shareUnicode: '\uf123',//this.$store.getters.getFontUnicodes.shareUnicode,
+        plusUnicode: '\uf123',//this.$store.getters.getFontUnicodes.plusUnicode,
+        priceUnicode: '\uf123',//this.$store.getters.getFontUnicodes.priceUnicode,
+        inviteUnicode: '\uf123',//this.$store.getters.getFontUnicodes.inviteUnicode,
+        overviewUnicode: '\uf123',//this.$store.getters.getFontUnicodes.overviewUnicode,
+        hamburgerUnicode: '\uf123',//this.$store.getters.getFontUnicodes.hamburgerUnicode,
+        starUnicode: '\uf123',//this.$store.getters.getFontUnicodes.starUnicode,
       }
     },
     methods: {
@@ -110,7 +110,7 @@ import { ImageAsset } from '@nativescript/core';
         //TODO: Open hamburger menu
       },
       onShareButtonTapped(evt: EventData) {
-        SocialShare.shareText(`${this.shareText}${this.points}`);
+        ///SocialShare.shareText(`${this.shareText}${this.points}`);
       },
       onProfileImageTapped(evt: EventData) {
         let message = "Hoe wil je foto wijzigen?";
@@ -123,10 +123,10 @@ import { ImageAsset } from '@nativescript/core';
           console.log(result);
           switch(result) {
             case camera:
-              openCamera(this.onProfileImageCallback);
+              //openCamera(this.onProfileImageCallback);
               break;
             case gallery:
-              openSingleImagePicker(this.onProfileImageCallback);
+              //openSingleImagePicker(this.onProfileImageCallback);
               break;
             case close:
               this.$navigateBack();

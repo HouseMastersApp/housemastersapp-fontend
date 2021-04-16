@@ -46,7 +46,7 @@ import Toolbar from "../toolbar/Toolbar.vue";
 import MDIButton from "../button/MDIButton.vue";
 import { EventData } from '@nativescript/core/data/observable';
 var dialogs = require("tns-core-modules/ui/dialogs");
-import * as SocialShare from "nativescript-social-share";
+//import * as SocialShare from "nativescript-social-share";
 
   export default {
     data() {
@@ -63,8 +63,8 @@ import * as SocialShare from "nativescript-social-share";
         householdCodeText: "Huishoud code:",
         inviteText: "Nodig huisgenoten uit",
         createHouseholdText: "Maak huishouden aan",
-        hamburgerUnicode: this.$store.getters.getFontUnicodes.hamburgerUnicode,
-        shareUnicode: this.$store.getters.getFontUnicodes.shareUnicode,
+        hamburgerUnicode: '\uf123',//this.$store.getters.getFontUnicodes.hamburgerUnicode,
+        shareUnicode: '\uf123',//this.$store.getters.getFontUnicodes.shareUnicode,
       }
     },
     methods: {
@@ -75,7 +75,7 @@ import * as SocialShare from "nativescript-social-share";
         //TODO: Open hamburger menu
       },
       onShareButtonTapped(evt: EventData) {
-        SocialShare.shareText(`${this.invitationText}${this.inviteCode}`);
+        //SocialShare.shareText(`${this.invitationText}${this.inviteCode}`);
       },
       onProfileImageTapped(evt: EventData) {
         console.log("Profile Image tapped");

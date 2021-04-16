@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">33.33% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/8</span>
+                <span class='fraction'>2/6</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">33.33% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/8</span>
+                <span class='fraction'>2/6</span>
             </div>
         
             
@@ -226,40 +226,40 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -351,21 +351,19 @@
 &lt;/template&gt;
 &nbsp;
 &lt;script lang="ts"&gt;
-<span class="cstat-no" title="statement not covered" >import Toolbar from "../toolbar/Toolbar.vue";</span>
+import Toolbar from "../toolbar/Toolbar.vue";
 import MDIButton from "../button/MDIButton.vue";
 import { EventData } from '@nativescript/core/data/observable';
-<span class="cstat-no" title="statement not covered" >var dialogs = require("tns-core-modules/ui/dialogs");</span>
-<span class="cstat-no" title="statement not covered" >import * as SocialShare from "nativescript-social-share";</span>
+var dialogs = require("tns-core-modules/ui/dialogs");
+//import * as SocialShare from "nativescript-social-share";
 &nbsp;
   export default {
 <span class="fstat-no" title="function not covered" >    data() {</span>
 <span class="cstat-no" title="statement not covered" >      return {</span>
         title: "Huishouden",
-        hamburgerUnicode: this.$store.getters.getFontUnicodes.hamburgerUnicode,
         profile: null,
         avatarPlaceholder: "~/assets/images/avatar.png",
         backgroundImage: "~/assets/images/avatar.png",
-        shareUnicode: this.$store.getters.getFontUnicodes.shareUnicode,
         inviteCode: "HM-43FGH23",
         invitationText: "Hey ik heb je uitgenodigd om mee te doen aan mijn huishouden. Download de huishouden app en gebruik deze code: ",
         subTitle: "Maak een huishouden aan",
@@ -373,7 +371,9 @@ import { EventData } from '@nativescript/core/data/observable';
         nameHousehold: "",
         householdCodeText: "Huishoud code:",
         inviteText: "Nodig huisgenoten uit",
-        createHouseholdText: "Maak huishouden aan"
+        createHouseholdText: "Maak huishouden aan",
+        hamburgerUnicode: '\uf123',//this.$store.getters.getFontUnicodes.hamburgerUnicode,
+        shareUnicode: '\uf123',//this.$store.getters.getFontUnicodes.shareUnicode,
       }
     },
     methods: {
@@ -384,7 +384,7 @@ import { EventData } from '@nativescript/core/data/observable';
         //TODO: Open hamburger menu
       },
 <span class="fstat-no" title="function not covered" >      onShareButtonTapped(evt: EventData) {</span>
-<span class="cstat-no" title="statement not covered" >        SocialShare.shareText(`${this.invitationText}${this.inviteCode}`);</span>
+        //SocialShare.shareText(`${this.invitationText}${this.inviteCode}`);
       },
 <span class="fstat-no" title="function not covered" >      onProfileImageTapped(evt: EventData) {</span>
 <span class="cstat-no" title="statement not covered" >        console.log("Profile Image tapped");</span>
@@ -439,7 +439,7 @@ import { EventData } from '@nativescript/core/data/observable';
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Tue Apr 13 2021 20:30:46 GMT+0200 (Central European Summer Time)
+                at Thu Apr 15 2021 20:21:45 GMT+0200 (Central European Summer Time)
             </div>
         </div>
         <script src="../../prettify.js"></script>
