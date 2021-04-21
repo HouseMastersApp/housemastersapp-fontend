@@ -12,6 +12,7 @@ const NSElements = [
   'TabView',
   'TabViewItem',
   'TextField',
+  'Label'
 ];
 
 NSElements.forEach((ele) => {

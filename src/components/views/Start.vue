@@ -15,7 +15,7 @@
 
           <GridLayout row="1" col="0" columns="*,*" rows="auto,auto,auto,auto,auto,*,auto,auto">
             <GridLayout col="1" width="100%" row="0" rows="auto" columns="*,auto">
-              <Label @tap="onShareButtonTapped" row="0" col="1" :text="shareUnicode" class="mdi icon"/>
+              <Label data-testid="shareBtn" ref="shareButton" @tap="onShareButtonTapped" row="0" col="1" :text="shareUnicode" class="mdi icon"/>
             </GridLayout>
 
             <GridLayout colSpan="2" rowSpan="2"  rows="*,30,30,*" columns="*,auto,*">
@@ -50,8 +50,8 @@ import MDIButton from "../button/MDIButton.vue";
 import CreateHouseholdViewVue from "./CreateHouseholdView.vue";
 import { EventData } from '@nativescript/core/data/observable';
 var dialogs = require("tns-core-modules/ui/dialogs");
-//import * as SocialShare from "nativescript-social-share";
-//import { openCamera, openSingleImagePicker } from "../../utils/cameraUtils.js";
+import * as SocialShare from "nativescript-social-share";
+import { openCamera, openSingleImagePicker } from "../../utils/cameraUtils.js";
 import { ImageAsset } from '@nativescript/core';
 
   export default {
@@ -110,7 +110,7 @@ import { ImageAsset } from '@nativescript/core';
         //TODO: Open hamburger menu
       },
       onShareButtonTapped(evt: EventData) {
-        ///SocialShare.shareText(`${this.shareText}${this.points}`);
+        SocialShare.shareText(`${this.shareText}${this.points}`);
       },
       onProfileImageTapped(evt: EventData) {
         let message = "Hoe wil je foto wijzigen?";
@@ -123,10 +123,10 @@ import { ImageAsset } from '@nativescript/core';
           console.log(result);
           switch(result) {
             case camera:
-              //openCamera(this.onProfileImageCallback);
+              openCamera(this.onProfileImageCallback);
               break;
             case gallery:
-              //openSingleImagePicker(this.onProfileImageCallback);
+              openSingleImagePicker(this.onProfileImageCallback);
               break;
             case close:
               this.$navigateBack();
